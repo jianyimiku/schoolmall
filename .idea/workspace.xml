@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3943afd7-e82d-4ed6-86e0-515f8f40aa75" name="Default Changelist" comment="" />
+    <list default="true" id="3943afd7-e82d-4ed6-86e0-515f8f40aa75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +58,13 @@
       <list>
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="XML File" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -81,6 +87,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1b4ymPjE29O9fbSf4dd02gFtz12" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -93,6 +100,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cslg.dao" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\schoolmall\src\main\webapp" />
     </key>
@@ -109,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.51">
+  <component name="RunManager" selected="JUnit.ShopDaoTest.testUpdateShop">
     <configuration name="AreaDaoTest.testGetArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolmall" />
       <extension name="coverage">
@@ -137,6 +147,38 @@
       <option name="PACKAGE_NAME" value="com.cslg.service" />
       <option name="MAIN_CLASS_NAME" value="com.cslg.service.AreaServiceTest" />
       <option name="METHOD_NAME" value="areaServiceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.testShopDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolmall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cslg.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cslg.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testShopDao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.testUpdateShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolmall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cslg.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cslg.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testUpdateShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -290,11 +332,15 @@
     <list>
       <item itemvalue="JUnit.AreaDaoTest.testGetArea" />
       <item itemvalue="JUnit.AreaServiceTest.areaServiceTest" />
+      <item itemvalue="JUnit.ShopDaoTest.testShopDao" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
       <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
+        <item itemvalue="JUnit.ShopDaoTest.testShopDao" />
         <item itemvalue="JUnit.AreaServiceTest.areaServiceTest" />
         <item itemvalue="JUnit.AreaDaoTest.testGetArea" />
       </list>
@@ -340,11 +386,30 @@
       <workItem from="1588299658482" duration="594000" />
       <workItem from="1588300265875" duration="107000" />
       <workItem from="1588300375802" duration="1000" />
-      <workItem from="1588300390278" duration="781000" />
+      <workItem from="1588300390278" duration="1584000" />
+      <workItem from="1588388039722" duration="4676000" />
+      <workItem from="1588408290893" duration="7000" />
+      <workItem from="1588410480426" duration="16000" />
+      <workItem from="1588418285257" duration="28000" />
+      <workItem from="1588429482294" duration="19000" />
+      <workItem from="1588473235669" duration="229000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
