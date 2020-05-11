@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3943afd7-e82d-4ed6-86e0-515f8f40aa75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -100,11 +101,16 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\schoolmall\src\main\resources" />
+      <recent name="D:\schoolmall\src\main\webapp\resources\images" />
+      <recent name="D:\schoolmall\src\main\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\schoolmall\src\main\webapp\resources\images" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.cslg.dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\schoolmall\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -119,35 +125,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopDaoTest.testUpdateShop">
-    <configuration name="AreaDaoTest.testGetArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.subStr">
+    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cslg.util.ImageUtil" />
       <module name="schoolmall" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cslg.dao.*" />
+          <option name="PATTERN" value="com.cslg.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cslg.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.AreaDaoTest" />
-      <option name="METHOD_NAME" value="testGetArea" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AreaServiceTest.areaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PathUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cslg.util.PathUtil" />
       <module name="schoolmall" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cslg.service.*" />
+          <option name="PATTERN" value="com.cslg.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cslg.service" />
-      <option name="MAIN_CLASS_NAME" value="com.cslg.service.AreaServiceTest" />
-      <option name="METHOD_NAME" value="areaServiceTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="subStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cslg.method.subStr" />
+      <module name="schoolmall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cslg.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -330,19 +343,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AreaDaoTest.testGetArea" />
-      <item itemvalue="JUnit.AreaServiceTest.areaServiceTest" />
+      <item itemvalue="Application.ImageUtil" />
+      <item itemvalue="Application.PathUtil" />
       <item itemvalue="JUnit.ShopDaoTest.testShopDao" />
+      <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
       <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
+      <item itemvalue="Application.subStr" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.subStr" />
+        <item itemvalue="Application.ImageUtil" />
+        <item itemvalue="Application.PathUtil" />
         <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
         <item itemvalue="JUnit.ShopDaoTest.testShopDao" />
-        <item itemvalue="JUnit.AreaServiceTest.areaServiceTest" />
-        <item itemvalue="JUnit.AreaDaoTest.testGetArea" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +407,8 @@
       <workItem from="1588410480426" duration="16000" />
       <workItem from="1588418285257" duration="28000" />
       <workItem from="1588429482294" duration="19000" />
-      <workItem from="1588473235669" duration="229000" />
+      <workItem from="1588473235669" duration="7194000" />
+      <workItem from="1589163032962" duration="959000" />
     </task>
     <servers />
   </component>
