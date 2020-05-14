@@ -3,13 +3,44 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cslg.dao.ShopDao">
+    <resultMap id="resultMap" type="Shop">
+        <id property="shopId" column="shop_id"/>
+        <result property="shopName" column="shop_name"/>
+        <result property="shopDesc" column="shop_desc"/>
+        <result property="shopAddr" column="shop_addr"/>
+        <result property="phone" column="phone"/>
+        <result property="shopImg" column="shop_img"/>
+        <result property="priority" column="priority"/>
+        <result property="createTime" column="create_time"/>
+        <result property="lastEditTime" column="last_edit_time"/>
+        <result property="enableStatus" column="enable_status"/>
+        <result property="advice" column="advice"/>
+        <association property="area" column="area_id" javaType="com.cslg.entity.Area">
+            <id property="areaId" column="area_id"/>
+            <result property="areaName" column="area_name"/>
+        </association>
+        <association property="shopCategory" column="shop_category_id" javaType="com.cslg.entity.ShopCategory">
+            <id property="shopCategoryId" column="shop_category_id"/>
+            <result property="shopCategoryName" column="shop_category_name"/>
+        </association>
+        <association property="owner" column="owner_id" javaType="com.cslg.entity.PersonInfo">
+            <id property="userId" column="user_id"/>
+            <result property="name" column="name"/>
+        </association>
+    </resultMap>
+    <select id="queryByShopId" resultMap="resultMap" parameterType="Long">
+        select s.shop_id,s.shop_name,s.shop_desc,s.shop_addr,s.phone,s.shop_img,s.priority,s.create_time,s.last_edit_time,
+        s.enable_status,s.advice,a.area_id,a.area_name,c.shop_category_id,c.shop_category_name from tb_shop s,tb_area a,
+        tb_shop_category c where shop_id = #{value} and s.area_id=a.area_id and s.shop_category_id=c.shop_category_id
+    </select>
+
     <insert id="insrtShop" useGeneratedKeys="true" keyProperty="shopId">
         insert into tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img,
         priority, create_time, last_edit_time, enable_status, advice)
         values (#{owner.userId},#{area.areaId},#{shopCategory.shopCategoryId},#{shopName},#{shopDesc},#{shopAddr},#{phone},
         #{shopImg},#{priority},#{createTime},#{lastEditTime},#{enableStatus},#{advice})
     </insert>
-    
+
     <update id="updateShop" parameterType="Shop">
         update tb_shop
         <set>
@@ -32,21 +63,17 @@
                 priority = #{shopName},
             </if>
             <if test="lastEditTime != null">
-                last_edit_time = #{shopName},
+                last_edit_time = #{lastEditTime},
             </if>
             <if test="enableStatus != null">
-                last_edit_time = #{shopName},
+                enable_status = #{enableStatus},
             </if>
             <if test="advice != null">
-                last_edit_time = #{shopName},
-            </if>
-            <if test="area != null">
-                area_id = #{area.areaId},
-            </if>
-            <if test="shopCategory != null">
-                shop_category_id = #{shopCategory.shopCategoryId},
+                advice = #{advice},
             </if>
         </set>
         where shop_id = #{shopId}
     </update>
+
+
 </mapper>

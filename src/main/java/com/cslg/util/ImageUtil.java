@@ -2,11 +2,14 @@ package com.cslg.util;
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -22,45 +25,83 @@ public class ImageUtil {
     private static String basePath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
     private static final SimpleDateFormat simple = new SimpleDateFormat("yyyyMMddHHmmss");
     private static final Random r = new Random();
-    public static String generateThumbnail(CommonsMultipartFile thumbnail, String targetAddr) {
+    private static final Logger logger = LoggerFactory.getLogger(ImageUtil.class);
+
+
+    /**
+     * 将CommonsMultipartFile 转换成为File
+     *
+     * @param cFile
+     * @return
+     */
+    public static File transferCommonsMultipartFiletoFile(CommonsMultipartFile cFile) {
+        File file = new File(cFile.getOriginalFilename());
+
+        try {
+            cFile.transferTo(file);
+        } catch (IOException e) {
+            logger.error(e.toString());
+            e.printStackTrace();
+        }
+        return file;
+    }
+
+    public static String generateThumbnail(InputStream inputStream, String fileName, String targetAddr) {
         String realFileName = getRandomFileName();
-        String extension = getFileExtension(thumbnail);
+        String extension = getFileExtension(fileName);
         makeDirPath(targetAddr);
         String relativeAddr = targetAddr + realFileName + extension;
-        File file = new File(PathUtil.getImagePath()+relativeAddr);
+        logger.debug(String.format("currrent relativeAddr is %s", relativeAddr));
+        File file = new File(PathUtil.getImagePath() + relativeAddr);
+        logger.debug(String.format("currrent addr is %s", PathUtil.getImagePath() + relativeAddr));
         try {
-            Thumbnails.of(thumbnail.getInputStream()).size(200,200)
-                    .watermark(Positions.BOTTOM_RIGHT,ImageIO.read(new File(basePath+"/1.jpg")),0.25f)
+            Thumbnails.of(inputStream).size(200, 200)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/1.jpg")), 0.25f)
                     .outputQuality(0.8f)
                     .toFile(file);
         } catch (IOException e) {
+            logger.error(e.toString());
             e.printStackTrace();
         }
-        return null;
+        return relativeAddr;
     }
 
     private static void makeDirPath(String targetAddr) {
+        String realFileParternPath = PathUtil.getImagePath() + targetAddr;
+        File file = new File(realFileParternPath);
+        if (!file.exists()) {
+            file.setWritable(true);
+            file.mkdirs();
+        }
     }
 
-    private static String getFileExtension(CommonsMultipartFile thumbnail) {
-       String name = thumbnail.getOriginalFilename();
-       String extension = name.substring(name.lastIndexOf("."));
-       return extension;
+    private static String getFileExtension(String fileName) {
+        return fileName.substring(fileName.lastIndexOf("."));
     }
 
-    private static String getRandomFileName() {
+
+    public static String getRandomFileName() {
         //获取随机五位数 [10000,99999)
-        int rannum = r.nextInt(89999)+10000;
+        int rannum = r.nextInt(89999) + 10000;
         String nowTimeStr = simple.format(new Date());
-        return nowTimeStr+rannum;
+        return nowTimeStr + rannum;
     }
 
-
-    public static void main(String[] args) throws IOException {
-        String baseBath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-        //将图片输入 输出大小 添加水印(水印位置，水印图片的地址，透明度)  压缩比 生成文件的地址
-        Thumbnails.of(new File(PathUtil.getImagePath() + "miku.jpg")).size(1920, 1080)
-                .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(baseBath + "/1.jpg")), 0.25f).outputQuality(0.8f)
-                .toFile("D:\\schoolmall\\src\\main\\webapp\\resources\\images\\mikunew.jpg");
+    /**
+     * storePath 是文件路径还是目录
+     * @param storePath
+     */
+    public static void deleteFileOrPath(String storePath){
+        File fileOrPath = new File(PathUtil.getImagePath()+storePath);
+        if (fileOrPath.exists()){
+            if (fileOrPath.isDirectory()){
+                File[] files = fileOrPath.listFiles();
+                for (File file:files){
+                    file.delete();
+                }
+            }
+            fileOrPath.delete();
+        }
     }
+
 }

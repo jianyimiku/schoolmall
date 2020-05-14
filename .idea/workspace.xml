@@ -7,9 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3943afd7-e82d-4ed6-86e0-515f8f40aa75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ShopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/entity/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/util/PathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/PathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cslg/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cslg/dao/ShopDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +73,7 @@
         <item name="o2o@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="o2o: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tb_area: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="tb_shop: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -58,8 +82,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="XML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -91,6 +117,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/images" />
@@ -98,19 +126,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\schoolmall\src\main\resources" />
-      <recent name="D:\schoolmall\src\main\webapp\resources\images" />
-      <recent name="D:\schoolmall\src\main\webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cslg.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\schoolmall\src\main\webapp\resources\images" />
+      <recent name="D:\schoolmall\src\main\webapp" />
+      <recent name="D:\schoolmall\src\test\resources" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.cslg.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\schoolmall\src\main\webapp\resources" />
+      <recent name="D:\schoolmall\src\main\webapp\WEB-INF\html\shop" />
+      <recent name="D:\schoolmall\src\test\resources" />
+      <recent name="D:\schoolmall\src\main\resources" />
+      <recent name="D:\schoolmall\src\main\webapp\resources\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,33 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.subStr">
-    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cslg.util.ImageUtil" />
-      <module name="schoolmall" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cslg.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PathUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cslg.util.PathUtil" />
-      <module name="schoolmall" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cslg.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ShopServiceTest.testModifyShop">
     <configuration name="subStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cslg.method.subStr" />
       <module name="schoolmall" />
@@ -165,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopDaoTest.testShopDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopCategoryDaoTest.testQueryShopCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolmall" />
       <extension name="coverage">
         <pattern>
@@ -174,14 +180,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cslg.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ShopDaoTest" />
-      <option name="METHOD_NAME" value="testShopDao" />
+      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ShopCategoryDaoTest" />
+      <option name="METHOD_NAME" value="testQueryShopCategory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopDaoTest.testUpdateShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDaoTest.testQueryByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolmall" />
       <extension name="coverage">
         <pattern>
@@ -191,15 +197,46 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.cslg.dao" />
       <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ShopDaoTest" />
-      <option name="METHOD_NAME" value="testUpdateShop" />
+      <option name="METHOD_NAME" value="testQueryByShopId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.testAddShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolmall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cslg.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cslg.service" />
+      <option name="MAIN_CLASS_NAME" value="com.cslg.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="testAddShop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.testModifyShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolmall" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cslg.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cslg.service" />
+      <option name="MAIN_CLASS_NAME" value="com.cslg.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="testModifyShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.51" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.51" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/superadmin/listarea.do" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/shopadmin/shopoperate" />
       <deployment>
         <artifact name="schoolmall:war exploded">
           <settings>
@@ -216,7 +253,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61817" />
+        <option name="DEBUG_PORT" value="61818" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -343,21 +380,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ImageUtil" />
-      <item itemvalue="Application.PathUtil" />
-      <item itemvalue="JUnit.ShopDaoTest.testShopDao" />
-      <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
+      <item itemvalue="Application.subStr" />
+      <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
+      <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
       <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="Application.subStr" />
+      <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
+      <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
+        <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
+        <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
+        <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
         <item itemvalue="Application.subStr" />
-        <item itemvalue="Application.ImageUtil" />
-        <item itemvalue="Application.PathUtil" />
-        <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
-        <item itemvalue="JUnit.ShopDaoTest.testShopDao" />
       </list>
     </recent_temporary>
   </component>
@@ -408,7 +445,35 @@
       <workItem from="1588418285257" duration="28000" />
       <workItem from="1588429482294" duration="19000" />
       <workItem from="1588473235669" duration="7194000" />
-      <workItem from="1589163032962" duration="959000" />
+      <workItem from="1589163032962" duration="1128000" />
+      <workItem from="1589164228594" duration="797000" />
+      <workItem from="1589165082555" duration="6599000" />
+      <workItem from="1589173352216" duration="915000" />
+      <workItem from="1589174280586" duration="75000" />
+      <workItem from="1589174359229" duration="192000" />
+      <workItem from="1589174599073" duration="161000" />
+      <workItem from="1589174790768" duration="10939000" />
+      <workItem from="1589187322565" duration="5574000" />
+      <workItem from="1589197462641" duration="984000" />
+      <workItem from="1589199315967" duration="769000" />
+      <workItem from="1589200173048" duration="2307000" />
+      <workItem from="1589248646161" duration="486000" />
+      <workItem from="1589289980121" duration="2951000" />
+      <workItem from="1589328482177" duration="1566000" />
+      <workItem from="1589330375498" duration="12942000" />
+      <workItem from="1589346571309" duration="2835000" />
+      <workItem from="1589349827775" duration="1571000" />
+      <workItem from="1589354295023" duration="4470000" />
+      <workItem from="1589359774924" duration="154000" />
+      <workItem from="1589360144954" duration="228000" />
+      <workItem from="1589360395470" duration="249000" />
+      <workItem from="1589360723438" duration="23000" />
+      <workItem from="1589360749556" duration="37000" />
+      <workItem from="1589360807456" duration="198000" />
+      <workItem from="1589361010450" duration="18000" />
+      <workItem from="1589361050989" duration="239000" />
+      <workItem from="1589361545639" duration="894000" />
+      <workItem from="1589421100683" duration="5971000" />
     </task>
     <servers />
   </component>

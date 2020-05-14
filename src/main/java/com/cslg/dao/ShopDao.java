@@ -1,6 +1,9 @@
 package com.cslg.dao;
 
+import com.cslg.dto.ShopExecution;
 import com.cslg.entity.Shop;
+
+import java.io.InputStream;
 
 /**
  * <h3>schoolmall</h3>
@@ -23,4 +26,12 @@ public interface ShopDao {
      * @return
      */
     int updateShop(Shop shop);
+
+
+    /**
+     * 通过shopId查询店铺
+     * @param shopId
+     * @return
+     */
+    Shop queryByShopId(Long shopId);
 }

@@ -22,6 +22,17 @@ public class ShopDaoTest extends BaseTest {
     private ShopDao shopDao;
 
     @Test
+    public void testQueryByShopId(){
+        Long shopId = 2L;
+
+        Shop shop = shopDao.queryByShopId(shopId);
+        System.out.println(shop);
+    }
+
+
+
+
+    @Test
     public void testShopDao(){
         Shop shop = new Shop();
         PersonInfo owner = new PersonInfo();
