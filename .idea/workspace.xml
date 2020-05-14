@@ -7,33 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3943afd7-e82d-4ed6-86e0-515f8f40aa75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ShopManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ShopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/entity/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/util/PathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/PathUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringWeb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cslg/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cslg/dao/ShopDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringWeb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringService.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringWeb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -473,7 +448,7 @@
       <workItem from="1589361010450" duration="18000" />
       <workItem from="1589361050989" duration="239000" />
       <workItem from="1589361545639" duration="894000" />
-      <workItem from="1589421100683" duration="5971000" />
+      <workItem from="1589421100683" duration="6146000" />
     </task>
     <servers />
   </component>
