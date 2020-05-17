@@ -20,4 +20,6 @@ public interface IShopService {
     Shop getByShopId(Long shopId);
 
     ShopExecution modifyShop(Shop shop, InputStream shopImgInputStream,String fileName);
+
+    ShopExecution getShopList(Shop shopCondition,int pageIndex,int pageSize);
 }

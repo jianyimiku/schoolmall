@@ -11,7 +11,6 @@
     </appender>
 
     <appender name="o2o" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <!--<File>d:/mmalllog/mmall.log</File>-->
         <File>D:/TOMCAT/apache-tomcat-8.5.51/logs/o2o/o2o.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>D:/TOMCAT/apache-tomcat-8.5.51/logs/o2o/o2o.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
@@ -29,7 +28,6 @@
         <File>D:/TOMCAT/apache-tomcat-8.5.51/logs/o2o/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>D:/TOMCAT/apache-tomcat-8.5.51/logs/o2o/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
-            <!--<fileNamePattern>d:/mmalllog/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
@@ -47,10 +45,6 @@
         <appender-ref ref="o2o" />
         <appender-ref ref="console"/>
     </logger>
-
-
-
-    <!-- geelynote mybatis log 日志 -->
 
     <logger name="com.cslg.dao" level="DEBUG"/>
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cslg.dao.ProductCategoryDao">
+    <resultMap id="resultMap" type="ProductCategory">
+        <id property="productCategoryId" column="product_category_id"/>
+        <result property="productCategoryName" column="product_category_name"/>
+        <result property="priority" column="priority"/>
+        <result property="createTime" column="create_time"/>
+        <result property="shopId" column="shop_id"/>
+    </resultMap>
+
+
+    <select id="queryProductCategoryList" resultMap="resultMap" parameterType="Long">
+        select
+        product_category_id,
+        product_category_name,
+        priority,
+        create_time,
+        shop_id
+        from
+        tb_product_category
+        where
+        shop_id = #{value}
+        order by priority desc
+     </select>
+
+
+    <insert id="batchInsertProductCategory" parameterType="java.util.List">
+        insert into tb_product_category(product_category_name, priority, create_time, shop_id)
+        values
+        <foreach collection="productCategoryList" item="item" index="index" separator=",">
+            (#{item.productCategoryName},#{item.priority},#{item.createTime},#{item.shopId})
+        </foreach>
+    </insert>
+
+    <delete id="deleteProductCategory" parameterType="java.util.Map">
+        delete from  tb_product_category
+        where product_category_id = #{productCategoryId}
+        and shop_id=#{shopId}
+    </delete>
+</mapper>

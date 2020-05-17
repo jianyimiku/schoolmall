@@ -66,6 +66,26 @@ public class ImageUtil {
         return relativeAddr;
     }
 
+    public static String generateNormal(InputStream inputStream, String fileName, String targetAddr) {
+        String realFileName = getRandomFileName();
+        String extension = getFileExtension(fileName);
+        makeDirPath(targetAddr);
+        String relativeAddr = targetAddr + realFileName + extension;
+        logger.debug(String.format("currrent relativeAddr is %s", relativeAddr));
+        File file = new File(PathUtil.getImagePath() + relativeAddr);
+        logger.debug(String.format("currrent addr is %s", PathUtil.getImagePath() + relativeAddr));
+        try {
+            Thumbnails.of(inputStream).size(337, 640)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/1.jpg")), 0.25f)
+                    .outputQuality(0.9f)
+                    .toFile(file);
+        } catch (IOException e) {
+            logger.error(e.toString());
+            e.printStackTrace();
+        }
+        return relativeAddr;
+    }
+
     private static void makeDirPath(String targetAddr) {
         String realFileParternPath = PathUtil.getImagePath() + targetAddr;
         File file = new File(realFileParternPath);

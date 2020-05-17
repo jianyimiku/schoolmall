@@ -2,6 +2,7 @@ package com.cslg.controller.shopadmin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -19,5 +20,24 @@ public class ShopAdminController {
     public String shopOperation(){
         return "shop/shopoperation";
     }
-    
+
+    @GetMapping("shoplist")
+    public String shopList(){
+        return "shop/shoplist";
+    }
+
+    @GetMapping("shopmanagement")
+    public String shopmanagement(){
+        return "shop/shopmanagement";
+    }
+
+    @GetMapping("productcategorymanagement")
+    public String productCategoryManage(){
+        return "shop/productcategorymanagement";
+    }
+
+    @RequestMapping("productoperation")
+    public String productoperation(){
+        return "shop/productoperation";
+    }
 }

@@ -7,6 +7,7 @@ import com.cslg.exceptions.ShopOperationException;
 import com.cslg.global.enums.ShopStateEnum;
 import com.cslg.service.IShopService;
 import com.cslg.util.ImageUtil;
+import com.cslg.util.PageCalculator;
 import com.cslg.util.PathUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import org.springframework.transaction.interceptor.TransactionAspectSupport;
 import java.io.File;
 import java.io.InputStream;
 import java.util.Date;
+import java.util.List;
 
 /**
  * <h3>schoolmall</h3>
@@ -92,14 +94,36 @@ public class ShopServiceImpl implements IShopService {
                         return new ShopExecution(ShopStateEnum.INNER_ERROR);
                     } else {
                         shop = shopDao.queryByShopId(shop.getShopId());
-//                        return new ShopExecution(ShopStateEnum.SUCCESS, shop);
+                    }
+                } else {
+                    shop.setLastEditTime(new Date());
+                    int effectedNum = shopDao.updateShop(shop);
+                    if (effectedNum <= 0) {
+                        return new ShopExecution(ShopStateEnum.INNER_ERROR);
+                    } else {
+                        shop = shopDao.queryByShopId(shop.getShopId());
                     }
                 }
             } catch (Exception e) {
-                throw new ShopOperationException("modifyShop"+e.getMessage());
+                throw new ShopOperationException("modifyShop" + e.getMessage());
             }
             return new ShopExecution(ShopStateEnum.SUCCESS, shop);
         }
+    }
+
+    @Override
+    public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
+        int rowIndex = PageCalculator.calculateRowIndex(pageIndex,pageSize);
+        List<Shop> shopList = shopDao.queryShopList(shopCondition, rowIndex, pageSize);
+        int count = shopDao.queryShopCount(shopCondition);
+        ShopExecution se = new ShopExecution();
+        if (shopList!=null){
+            se.setShopList(shopList);
+            se.setCount(count);
+        }else {
+            se.setState(ShopStateEnum.INNER_ERROR.getState());
+        }
+        return se;
     }
 
     private void addShopImg(Shop shop, InputStream shopImgInputStream, String fileName) {

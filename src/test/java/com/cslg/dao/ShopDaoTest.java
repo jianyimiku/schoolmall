@@ -5,10 +5,12 @@ import com.cslg.entity.Area;
 import com.cslg.entity.PersonInfo;
 import com.cslg.entity.Shop;
 import com.cslg.entity.ShopCategory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * <h3>schoolmall</h3>
@@ -21,7 +23,20 @@ public class ShopDaoTest extends BaseTest {
     @Autowired
     private ShopDao shopDao;
 
+
     @Test
+    public void testQueryShopList(){
+        Shop shopCondition = new Shop();
+        PersonInfo owner = new PersonInfo();
+        owner.setUserId(1L);
+        shopCondition.setOwner(owner);
+        List<Shop> shopList = shopDao.queryShopList(shopCondition, 0, 5);
+
+    }
+
+
+    @Test
+    @Ignore
     public void testQueryByShopId(){
         Long shopId = 2L;
 
@@ -33,6 +48,7 @@ public class ShopDaoTest extends BaseTest {
 
 
     @Test
+    @Ignore
     public void testShopDao(){
         Shop shop = new Shop();
         PersonInfo owner = new PersonInfo();
