@@ -1,6 +1,7 @@
 package com.cslg.service.impl;
 
 import com.cslg.dao.ProductCategoryDao;
+import com.cslg.dao.ProductDao;
 import com.cslg.dto.ProductCategoryExecution;
 import com.cslg.entity.ProductCategory;
 import com.cslg.exceptions.ProductCategoryOperationException;
@@ -23,6 +24,9 @@ import java.util.List;
 public class ProductCategoryServiceImpl implements IProductCategoryService {
     @Autowired
     private ProductCategoryDao productCategoryDao;
+
+    @Autowired
+    private ProductDao productDao;
 
     @Override
     public List<ProductCategory> getProductCategoryList(long shopId) {
@@ -50,15 +54,24 @@ public class ProductCategoryServiceImpl implements IProductCategoryService {
 
     @Override
     public ProductCategoryExecution deleteProductCategory(long productCategoryId, long shopId) {
+        //因为有外键 所以先解除关联
         try {
-            int effectedNum = productCategoryDao.deleteProductCategory(productCategoryId, shopId);
-            if (effectedNum <= 0){
-                throw new ProductCategoryOperationException("删除失败");
-            }else {
-                return new ProductCategoryExecution(ProductCategoryStateEnum.SUCCESS);
+            int effectedNum = productDao.updateProductCategoryToNull(productCategoryId);
+            if (effectedNum < 0){
+                throw new RuntimeException("商品类别更新事变");
             }
         }catch (Exception e){
-            throw new ProductCategoryOperationException("delete"+e.getMessage());
+            throw new RuntimeException(e.getMessage());
+        }
+        try {
+            int effectedNum = productCategoryDao.deleteProductCategory(productCategoryId, shopId);
+            if (effectedNum <= 0) {
+                throw new ProductCategoryOperationException("删除失败");
+            } else {
+                return new ProductCategoryExecution(ProductCategoryStateEnum.SUCCESS);
+            }
+        } catch (Exception e) {
+            throw new ProductCategoryOperationException("delete" + e.getMessage());
         }
     }
 }

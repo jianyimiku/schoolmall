@@ -17,4 +17,10 @@ import java.util.List;
 public interface IProductService {
     ProductExecution addProduct(Product product, ImageHolder imageHolder,
                                 List<ImageHolder> imageHolderList);
+
+    Product getProductById(long productId);
+
+    ProductExecution modifyProduct(Product product, ImageHolder imageHolder, List<ImageHolder> imageHolderList);
+
+    ProductExecution getProductList(Product productCondition, int pageIndex, int pageSize);
 }

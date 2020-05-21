@@ -7,29 +7,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3943afd7-e82d-4ed6-86e0-515f8f40aa75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ProductManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ShopAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/controller/shopadmin/ShopManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ShopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/entity/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/entity/ProductCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/IShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/IShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ProductImgDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/dao/ProductImgDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/IShopCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/IShopCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/AreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/AreaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ShopCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cslg/service/impl/ShopCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ProductImgDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ProductImgDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopCategoryDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/cslg/dao/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cslg/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cslg/dao/ShopDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productmanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productmanagement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productmanagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productmanagement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpringWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cslg/dao/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cslg/dao/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cslg/dao/ProductImgDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cslg/dao/ProductImgDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopCategoryDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cslg/dao/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringWeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/SpringWeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ProductImgDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ProductImgDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ShopCategoryDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/com/cslg/dao/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/resources/images/upload/item/shop/37/2020051115363798489.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/resources/js/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/resources/js/common/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/schoolmall/resources/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/resources/js/shop/shopoperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/html/shop/productmanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/html/shop/productmanagement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/html/shop/productoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/html/shop/productoperation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/schoolmall/resources/js/shop/productmanagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/schoolmall/resources/js/shop/productmanagement.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +86,7 @@
         <item name="o2o@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="o2o: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tb_product_img: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="tb_shop_category: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -78,11 +95,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="TypeScript File" />
+        <option value="XML File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
-        <option value="XML File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -128,8 +145,12 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.cslg.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\schoolmall\src\main\webapp\resources\css\shop" />
+      <recent name="D:\schoolmall\src\main\webapp\resources" />
+      <recent name="D:\schoolmall\src\main\webapp\WEB-INF\html\shop" />
+      <recent name="D:\schoolmall\src\test\resources" />
+      <recent name="D:\schoolmall\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\schoolmall\src\main\webapp\resources\js\shop" />
@@ -141,12 +162,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cslg.exceptions" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\schoolmall\src\main\webapp\resources\css\shop" />
-      <recent name="D:\schoolmall\src\main\webapp\resources" />
-      <recent name="D:\schoolmall\src\main\webapp\WEB-INF\html\shop" />
-      <recent name="D:\schoolmall\src\test\resources" />
-      <recent name="D:\schoolmall\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cslg.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -161,24 +178,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductImgDaoTest">
-    <configuration name="ProductCategoryDaoTest.testBatchInsertProductCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.51">
+    <configuration name="JedisUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cslg.cache.JedisUtil" />
       <module name="schoolmall" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cslg.dao.*" />
+          <option name="PATTERN" value="com.cslg.cache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cslg.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ProductCategoryDaoTest" />
-      <option name="METHOD_NAME" value="testBatchInsertProductCategory" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductDaoTest.testAInsertProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HeadLineDaoTest.testQuerArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolmall" />
       <extension name="coverage">
         <pattern>
@@ -187,8 +201,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cslg.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.ProductDaoTest" />
-      <option name="METHOD_NAME" value="testAInsertProduct" />
+      <option name="MAIN_CLASS_NAME" value="com.cslg.dao.HeadLineDaoTest" />
+      <option name="METHOD_NAME" value="testQuerArea" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,9 +272,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.51" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.51" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/shopadmin/shoplist" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/frontend/index" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="schoolmall:war exploded">
           <settings>
@@ -404,22 +417,22 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.JedisUtil" />
       <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
-      <item itemvalue="JUnit.ProductCategoryDaoTest.testBatchInsertProductCategory" />
-      <item itemvalue="JUnit.ProductDaoTest.testAInsertProduct" />
       <item itemvalue="JUnit.ProductImgDaoTest.testABatchInsertProductImg" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
-      <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="JUnit.ProductImgDaoTest.testCDeleteProductImgByProductId" />
       <item itemvalue="JUnit.ProductImgDaoTest" />
+      <item itemvalue="JUnit.HeadLineDaoTest.testQuerArea" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.51" />
+      <item itemvalue="Tomcat Server.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JedisUtil" />
+        <item itemvalue="JUnit.HeadLineDaoTest.testQuerArea" />
         <item itemvalue="JUnit.ProductImgDaoTest" />
         <item itemvalue="JUnit.ProductImgDaoTest.testCDeleteProductImgByProductId" />
         <item itemvalue="JUnit.ProductImgDaoTest.testABatchInsertProductImg" />
-        <item itemvalue="JUnit.ProductDaoTest.testAInsertProduct" />
-        <item itemvalue="JUnit.ProductCategoryDaoTest.testBatchInsertProductCategory" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +526,20 @@
       <workItem from="1589618903141" duration="459000" />
       <workItem from="1589621915767" duration="2818000" />
       <workItem from="1589680954177" duration="16363000" />
-      <workItem from="1589705515531" duration="2851000" />
+      <workItem from="1589705515531" duration="3045000" />
+      <workItem from="1589769815026" duration="1507000" />
+      <workItem from="1589771820739" duration="18495000" />
+      <workItem from="1589802036021" duration="137000" />
+      <workItem from="1589858709209" duration="2761000" />
+      <workItem from="1589864449227" duration="5903000" />
+      <workItem from="1589876015105" duration="7510000" />
+      <workItem from="1589950896320" duration="13715000" />
+      <workItem from="1590022913811" duration="194000" />
+      <workItem from="1590023299153" duration="2858000" />
+      <workItem from="1590027495816" duration="3368000" />
+      <workItem from="1590030898664" duration="846000" />
+      <workItem from="1590032145135" duration="3007000" />
+      <workItem from="1590036290345" duration="1213000" />
     </task>
     <servers />
   </component>
@@ -532,5 +558,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cslg/controller/frontend/ShopDetailController.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

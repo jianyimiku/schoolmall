@@ -55,5 +55,28 @@ https://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
         <property name="maxUploadSize" value="20971520"/>
         <property name="maxInMemorySize" value="20971520"/>
     </bean>
+    
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <bean id="ShopInterceptor"
+                  class="com.cslg.interceptor.shopadmin.ShopLoginInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <!-- shoplist page -->
+            <mvc:exclude-mapping path="/shopadmin/shoplist" />
+            <mvc:exclude-mapping path="/shopadmin/getshoplist" />
+            <!-- shopregister page -->
+            <mvc:exclude-mapping path="/shopadmin/getshopinitinfo" />
+            <mvc:exclude-mapping path="/shopadmin/registershop" />
+            <mvc:exclude-mapping path="/shopadmin/shopoperation" />
+            <!-- shopmanage page -->
+            <mvc:exclude-mapping path="/shopadmin/shopmanagement" />
+            <mvc:exclude-mapping path="/shopadmin/getshopmanagementinfo" />
+            <bean id="ShopPermissionInterceptor"
+                  class="com.cslg.interceptor.shopadmin.ShopPermissionInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 </beans>

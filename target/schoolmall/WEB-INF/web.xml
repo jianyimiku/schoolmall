@@ -88,4 +88,6 @@
         <servlet-name>KaptchaServlet</servlet-name>
         <url-pattern>/KaptchaServlet</url-pattern>
     </servlet-mapping>
+
+
 </web-app>
